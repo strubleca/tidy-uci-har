@@ -22,7 +22,7 @@ Use the script by opening an R session and setting your working directory
 to the directory containing `run_analysis.R`. Then execute the script with
 the R command:
 
-    source("run_analysis.R")
+    source('run_analysis.R')
 
 The raw data and a tidy data set named `tidy_UCI_HAR_Dataset.txt` will be
 placed in the `data` subdirectory of the current working directory.
