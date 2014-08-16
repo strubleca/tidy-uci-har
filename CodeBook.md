@@ -7,7 +7,7 @@ Code Book for tidy_UCI_HAR_Dataset.txt
 These are the variable descriptions for the columns in 
 `tidy_UCI_HAR_Dataset.txt`.
 
-* `Subject` =`int`=
+* `Subject` __`int`__
 * `Activity`
 * `TimeBodyAccelerationMeanX`
 * `TimeBodyAccelerationMeanY`
