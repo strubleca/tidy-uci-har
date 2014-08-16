@@ -13,50 +13,81 @@
 
 library(plyr) # Use plyr for final aggregation of data by column means.
 
-# Step 0.  --------------------------------------------------------------------
-# Download and extract the raw data set
+# Initialize variables used throughout the script. ----------------------------
 
-# Initialize variables used throughout the script.
-# The data URL, local data directory and local file name for the raw data.
+# The data URL
 dataUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-dataDir <- "../data"   ## Put this a level up. Don't put raw data in repo.
+
+# The local data directory for where the data should be placed. 
+dataDir <- "./data"  
+
+# Name of the raw data file
 rawDataFile <- file.path(dataDir, "UCI_HAR_Dataset.zip")
+
+# The top level directory name of the raw data. From the ZIP file.
+rawDataDir <- file.path(dataDir, "UCI HAR Dataset")
+
+# The file containing the date the raw data was downloaded.
 dateFile <- file.path(dataDir, "dateDownloaded.txt")
-rawDataDir <- file.path(dataDir, "UCI HAR Dataset") # dir name from ZIP file.
+
+# The final tidy data file.
+tidyDataFile <- file.path(dataDir, "tidy_UCI_HAR_Dataset.txt")
+
+# Step 0.  --------------------------------------------------------------------
+# Download and extract the raw data set.
+
+writeLines(strwrap("Step 0. Download and extract the raw data set.",
+                   exdent=8))
 
 # Create the data directory for storing the raw data and download the file,
 # if they don't exist.
 if (!file.exists(dataDir)) {
-    writeLines(paste("Creating data directory:", dataDir))
+    writeLines(paste("        Creating data directory:", dataDir))
     dir.create(dataDir)
 }
 
 # Download the raw data file
 if (!file.exists(rawDataFile)) {
-    writeLines(paste("Downloading raw data file:", rawDataFile, "..."))
+    writeLines(paste("        Downloading raw data file:", rawDataFile, "..."))
     # Select a download method that will work on Mac OS X (Darwin) or
     # other operating systems.
     os <- Sys.info()["sysname"]
     if (os == "Darwin") {
-        downloadMethod <- "curl"
+        try(download.file(dataUrl, 
+                          destfile=rawDataFile, 
+                          method="curl", 
+                          quiet=TRUE))
     } else {
-        downloadMethod <- "auto" # Default on other operating systems
+        # XXX: Untested! Don't have another machine to use.
+        # Try to download file using default method. 
+        try(download.file(dataUrl, 
+                          destfile=rawDataFile,
+                          quiet=TRUE))
     }
-    download.file(dataUrl, destfile=rawDataFile, method=downloadMethod)
+    
+    if (!file.exists(rawDataFile)) {
+        writeLines(paste("        Could not download data file:", rawDataFile))
+        writeLines("        Manually download ZIP file.")
+        writeLines("Stopping script execution.")
+        stop() # Stop script execution.        
+    }
+    
     dateDownloaded <- date()
     writeLines(dateDownloaded, con=dateFile)
-    writeLines("Done.")
 }
 
 # Unzip the data set
 if (!file.exists(rawDataDir)) {
-    writeLines(paste("Unzipping", rawDataFile, "to", rawDataDir))
+    writeLines(paste("        Unzipping", rawDataFile, "to", rawDataDir))
     unzip(rawDataFile, exdir = dataDir, setTimes = TRUE)  
-    writeLines("Done.")
 }
 
 # Step 1. ---------------------------------------------------------------------
 # Merges the training and the test sets to create one data set. 
+
+writeLines(
+    strwrap("Step 1. Merges the training and the test sets to create one data set.",
+            exdent=8))
 
 trainDataDir <- file.path(rawDataDir, "train")
 testDataDir <- file.path(rawDataDir, "test")
@@ -85,6 +116,10 @@ allY <- c(trainY, testY)
 # Extracts only the measurements on the mean and standard deviation for each 
 # measurement.
 
+writeLines(
+    strwrap("Step 2. Extracts only the measurements on the mean and standard deviation for each measurement.",
+            exdent=8))
+
 # Read in the feature names to get names for the columns.
 features <- read.table(file.path(rawDataDir, "features.txt"),
                        header=FALSE,
@@ -103,6 +138,10 @@ names(desiredX) <- features$Name[desiredColumns]
 # Step 3. ---------------------------------------------------------------------
 # Uses descriptive activity names to name the activities in the data set.
 
+writeLines(
+    strwrap("Step 3. Uses descriptive activity names to name the activities in the data set.",
+            exdent=8))
+
 # Read the specification from the labels file.
 activityLabels <- read.table(file.path(rawDataDir, "activity_labels.txt"),
                              header=FALSE,
@@ -113,6 +152,10 @@ allActivities  <- activityLabels$Name[activityOrder]
 
 # Step 4. ---------------------------------------------------------------------
 # Appropriately labels the data set with descriptive variable names.
+
+writeLines(
+    strwrap("Step 4. Appropriately labels the data set with descriptive names.",
+            exdent=8))
 
 # Initialize to the current column names.
 niceNames <- colnames(desiredX)
@@ -151,6 +194,10 @@ colnames(desiredX) <- niceNames
 # Creates a second, independent tidy data set with the average of each variable
 # for each activity and each subject.
 
+writeLines(
+    strwrap("Step 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.",
+            exdent=8))
+
 # Use plyr to aggregrate the data. The allSubject and allActivities vectors
 # are now used to index and group the desired data columns. plyr adds two
 # columns named "Subject" and "Activity" to the output indicating how the
@@ -159,3 +206,8 @@ colnames(desiredX) <- niceNames
 tidyDat <- ddply(desiredX, 
                  .(Subject=allSubject, Activity=allActivities), 
                  colMeans)
+
+# Write the final tidy dataset out.
+write.table(tidyDat, tidyDataFile, row.names=F)
+
+writeLines("Done.")

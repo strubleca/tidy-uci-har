@@ -2,3 +2,5 @@
 .Rhistory
 .RData
 tidy-uci-har.Rproj
+data/
+*.swp
