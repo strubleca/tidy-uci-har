@@ -32,6 +32,15 @@ time course observations also present in the data set. Because the
 course project does not require using the time course observations
 directly, they were ignored during processing.
 
+## Cached Data Set Copy
+
+Per the instructions for the course project,
+the raw data was downloaded from the URL
+
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+which contains a cached copy of the original data set.
+
 ## Transformations
 
 Several transformations were performed on the raw data set
