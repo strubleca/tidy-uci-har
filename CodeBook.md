@@ -30,7 +30,38 @@ It should be noted that these
 data are not in their rawest form, but transformations of sliding window
 time course observations also present in the data set. Because the
 course project does not require using the time course observations
-directly, they were ignored during processing.
+directly, they were ignored during processing. 
+
+## Preprocessing By Original Authors
+
+According to the original documentation in `features_info.txt`, the
+raw data were preprocessed as follows:
+
+> The features selected for this database come from the accelerometer
+> and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These
+> time domain signals (prefix 't' to denote time) were captured at a
+> constant rate of 50 Hz. Then they were filtered using a median
+> filter and a 3rd order low pass Butterworth filter with a corner
+> frequency of 20 Hz to remove noise. Similarly, the acceleration
+> signal was then separated into body and gravity acceleration signals
+> (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth
+> filter with a corner frequency of 0.3 Hz.
+
+It is not immediately clear from this description what the units for
+measurement are.
+
+Further preprocessing was performed by the original authors as follows:
+
+> Subsequently, the body linear acceleration and angular velocity
+> were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and
+> tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional
+> signals were calculated using the Euclidean norm (tBodyAccMag,
+> tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag).
+
+> Finally a Fast Fourier Transform (FFT) was applied to some of these
+> signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ,
+> fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to
+> indicate frequency domain signals).
 
 ## Cached Data Set Copy
 
@@ -142,7 +173,10 @@ to obtain the column means.
 ## Variables
 These are the variable descriptions for the columns in 
 `tidy_UCI_HAR_Dataset.txt`. R types for the columns are used to describe
-the data type for each column.
+the data type for each column. All measurement variables are aggregations
+by the mean of the original data columns. As stated in
+the "Preprocessing By Original Authors" section above,
+the units are not immediately apparent.
 
 * `Subject` - Type: __`integer`__ - Description: The subject ID for the 
 observations.
