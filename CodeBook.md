@@ -184,10 +184,11 @@ the
 section above,
 the units are not immediately apparent.
 
-* `Subject` The subject ID for the measurements in the same row. 
- __`integer`__
+* `Subject` The subject ID for the measurements in the same row. Possible
+values are 1 through 30.  __`integer`__
 * `Activity` The type of activity being performed for the measurements in the 
-same row. __`factor`__ 
+same row. Possible values are `LAYING`, `SITTING`, `STANDING`, `WALKING`,
+`WALKING_DOWNSTAIRS`, `WALKING_UPSTAIRS`. __`factor`__ 
 * `TimeBodyAccelerationMeanX` Mean time domain signals of __`numeric`__
 * `TimeBodyAccelerationMeanY` Mean time domain signals of __`numeric`__ 
 * `TimeBodyAccelerationMeanZ` Mean time domain signals of __`numeric`__
