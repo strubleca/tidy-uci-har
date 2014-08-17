@@ -156,7 +156,8 @@ The variable name transformation rules used are:
 * Rule 6. Gyro is replaced with Gyroscope.
 * Rule 7. Mag is replaced with Magnitude.
 * Rule 8. Remove dashes (-)
-* Rule 9. BodyBody is replaced with Body (to fix apparent typo in `features.txt`)
+* Rule 9. BodyBody is replaced with Body (to fix an apparent typo 
+in `features.txt`)
 
 ### Aggregation
 
