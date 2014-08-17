@@ -12,6 +12,9 @@ on Coursera.
   by the tidying process.
 * `run_analysis.R` the main analysis script performing the specified data
   tidying tasks.
+* `tidy_UCI_HAR_Dataset.txt` sample output from the `run_analysis.R` script
+  included in the repository for completeness. Under normal circumstances,
+  data itself would not be part of the repository.
 
 ## Main Script
 
