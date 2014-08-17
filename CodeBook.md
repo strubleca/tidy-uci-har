@@ -190,18 +190,18 @@ values are 1 through 30.  __`integer`__
 * `Activity` The type of activity being performed for the measurements in the 
 same row. Possible values are `LAYING`, `SITTING`, `STANDING`, `WALKING`,
 `WALKING_DOWNSTAIRS`, `WALKING_UPSTAIRS`. __`factor`__ 
-* `TimeBodyAccelerationMeanX` Mean time domain signals of __`numeric`__
-* `TimeBodyAccelerationMeanY` Mean time domain signals of __`numeric`__ 
-* `TimeBodyAccelerationMeanZ` Mean time domain signals of __`numeric`__
-* `TimeBodyAccelerationStandardDeviationX` Mean time domain signals of __`numeric`__
-* `TimeBodyAccelerationStandardDeviationY` Mean time domain signals of __`numeric`__
-* `TimeBodyAccelerationStandardDeviationZ` Mean time domain signals of __`numeric`__
-* `TimeGravityAccelerationMeanX` Mean time domain signals of __`numeric`__
-* `TimeGravityAccelerationMeanY` Mean time domain signals of __`numeric`__
-* `TimeGravityAccelerationMeanZ` Mean time domain signals of __`numeric`__
-* `TimeGravityAccelerationStandardDeviationX` Mean time domain signals of __`numeric`__
-* `TimeGravityAccelerationStandardDeviationY` Mean time domain signals of __`numeric`__
-* `TimeGravityAccelerationStandardDeviationZ` Mean time domain signals of __`numeric`__
+* `TimeBodyAccelerationMeanX` Mean of the mean time domain signals of body linear acceleration in the X direction. __`numeric`__
+* `TimeBodyAccelerationMeanY` Mean of the mean time domain signals of body linear acceleration in the Y direction. __`numeric`__ 
+* `TimeBodyAccelerationMeanZ` Mean of the mean time domain signals of body linear acceleration in the Z direction. __`numeric`__
+* `TimeBodyAccelerationStandardDeviationX` Mean standard deviations of time domain signals of the body linear acceleration in the X direction. __`numeric`__
+* `TimeBodyAccelerationStandardDeviationY` Mean standard deviations of time domain signals of body linear acceleration in the Y direction. __`numeric`__
+* `TimeBodyAccelerationStandardDeviationZ` Mean standard deviations of time domain signals of body linear acceleration in the Z direction. __`numeric`__
+* `TimeGravityAccelerationMeanX` Mean of the mean time domain signals of gravity linear acceleration in the X direction. __`numeric`__
+* `TimeGravityAccelerationMeanY` Mean of the mean time domain signals of gravity linear acceleration in the Y direction. __`numeric`__
+* `TimeGravityAccelerationMeanZ` Mean of the mean time domain signals of gravity linear acceleration in the Z direction. __`numeric`__
+* `TimeGravityAccelerationStandardDeviationX` Mean standard deviations of time domain signals of gravity linear acceleration in the X direction. __`numeric`__
+* `TimeGravityAccelerationStandardDeviationY` Mean standard deviations of time domain signals of gravity linear acceleration in the Y direction. __`numeric`__
+* `TimeGravityAccelerationStandardDeviationZ` Mean standard deviations of time domain signals of gravity linear acceleration in the Z direction. __`numeric`__
 * `TimeBodyAccelerationJerkMeanX` Mean time domain signals of __`numeric`__
 * `TimeBodyAccelerationJerkMeanY` Mean time domain signals of __`numeric`__
 * `TimeBodyAccelerationJerkMeanZ` Mean time domain signals of __`numeric`__
