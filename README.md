@@ -5,6 +5,16 @@ The aim of `tidy-uci-har` is to create a tidy version of the UCI HAR dataset
 for the "Getting and Cleaning Data" course offered August 4-31, 2014 
 on Coursera.
 
+## Files
+
+* `README.md` this file, describing the overall repository.
+* `CodeBook.md` the tidy data file code book for the data set produced
+  by the tidying process.
+* `run_analysis.R` the main analysis script performing the specified data
+  tidying tasks.
+
+## Main Script
+
 The R script `run_analysis.R` downloads, if not already present, and processes
 the raw UCI HAR dataset as follows:
 
