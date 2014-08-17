@@ -182,7 +182,8 @@ by the mean of the original data columns. As stated in
 the 
 [Preprocessing By Original Authors](#preprocessing-by-original-authors)
 section above,
-the units are not immediately apparent.
+the units are not immediately apparent. The final dimensions of the data
+set are 180 rows by 68 columns.
 
 * `Subject` The subject ID for the measurements in the same row. Possible
 values are 1 through 30.  __`integer`__
