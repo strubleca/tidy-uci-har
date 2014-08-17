@@ -1,6 +1,37 @@
 Code Book for tidy_UCI_HAR_Dataset.txt
 ======================================
 
+The course project for "Getting and Cleaning Data" 
+offered August 4-31, 2014 on [Coursera](http://www.coursera.org)
+was to download and tidy the 
+[Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
+available from the University of California, Irvine Machine Learning Repository.
+
+The data set\'s abstract provided at UCI is
+
+> Human Activity Recognition database built from the recordings of 30 subjects
+> performing activities of daily living (ADL) while carrying a 
+> waist-mounted smartphone with embedded inertial sensors.
+
+Accelerometer and gyroscope readings were taken for 30 subjects in six
+different activity categories: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, 
+SITTING, STANDING, LAYING. The resulting data consisted of 10299 observations
+(rows) with 561 measurements (columns). 
+
+Subjects in the study were divided into training and test sets,
+and the resulting observations for those subjects were divided as well.
+
+Based on the description provided by the original authors,
+the underlying problem being addressed is to develop
+a classifier that can recognize different activity types
+from the activity readings.
+
+It should be noted that these
+data are not in their rawest form, but transformations of sliding window
+time course observations also present in the data set. Because the
+course project does not require using the time course observations
+directly, they were ignored during processing.
+
 ## Transformations
 
 Several transformations were performed on the raw data set
