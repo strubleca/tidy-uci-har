@@ -70,6 +70,8 @@ The second step specified in the course project stated,
 Based on reading the raw data set's code book, it was determined that
 only measurements containing mean() and std() would be included.
 
+The selected columns from `allX` are placed into the `desiredX` variable.
+
 ### Activity Naming
 
 The third step of the course project stated,
@@ -120,11 +122,11 @@ The fifth and final step of the course project stated,
 
 To accomplish the aggregation,
 the `plyr` package was used
-to group the rows of the `allX` matrix
+to group the rows of the `desiredX` matrix
 by the values in the `allSubject` and `allActivities` vectors.
 Two new columns named `Subject` and `Activity` are added
 to the resulting matrix, and the remaining columns contain
-the column means for the row groups in `allX`.
+the column means for the row groups in `desiredX`.
 The `colMeans()` function was applied to each group
 to obtain the column means.
 
