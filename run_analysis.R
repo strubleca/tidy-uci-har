@@ -187,6 +187,9 @@ niceNames <- gsub("Mag", "Magnitude", niceNames)
 # Rule 8. Remove dashes (-)
 niceNames <- gsub("-", "", niceNames)
 
+# Rule 9. Replace BodyBody with Body
+niceNames <- gsub("BodyBody", "Body", niceNames)
+
 # Assign new names to the desired feature data
 colnames(desiredX) <- niceNames
 
