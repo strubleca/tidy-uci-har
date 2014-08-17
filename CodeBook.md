@@ -186,350 +186,351 @@ section above,
 the units are not immediately apparent. The final dimensions of the data
 set are 180 rows by 68 columns.
 
-* `Subject`
+* `Subject`  
 The subject ID for the measurements in the same row. Possible
 values are 1 through 30.
 __`integer`__
-* `Activity` The type of activity being performed for the measurements in the 
+* `Activity`  
+The type of activity being performed for the measurements in the 
 same row. Possible values are `LAYING`, `SITTING`, `STANDING`, `WALKING`,
 `WALKING_DOWNSTAIRS`, `WALKING_UPSTAIRS`.
 __`factor`__ 
-* `TimeBodyAccelerationMeanX` 
+* `TimeBodyAccelerationMeanX`  
 Mean of the mean time domain 
 body linear acceleration signals
 in the X direction. 
 __`numeric`__
-* `TimeBodyAccelerationMeanY`
+* `TimeBodyAccelerationMeanY`  
 Mean of the mean time domain
 body linear acceleration signals
 in the Y direction.
 __`numeric`__ 
-* `TimeBodyAccelerationMeanZ`
+* `TimeBodyAccelerationMeanZ`  
 Mean of the mean time domain 
 body linear acceleration signals
 in the Z direction.
 __`numeric`__
-* `TimeBodyAccelerationStandardDeviationX`
+* `TimeBodyAccelerationStandardDeviationX`  
 Mean standard deviations of time domain 
 body linear acceleration signals
 in the X direction.
 __`numeric`__
-* `TimeBodyAccelerationStandardDeviationY`
+* `TimeBodyAccelerationStandardDeviationY`  
 Mean standard deviations of time domain
 body linear acceleration signals
 in the Y direction.
 __`numeric`__
-* `TimeBodyAccelerationStandardDeviationZ`
+* `TimeBodyAccelerationStandardDeviationZ`  
 Mean standard deviations of time domain
 body linear acceleration signals
 in the Z direction.
 __`numeric`__
-* `TimeGravityAccelerationMeanX`
+* `TimeGravityAccelerationMeanX`  
 Mean of the mean time domain
 gravity linear acceleration signals
 in the X direction.
 __`numeric`__
-* `TimeGravityAccelerationMeanY`
+* `TimeGravityAccelerationMeanY`  
 Mean of the mean time domain
 gravity linear acceleration signals
 in the Y direction.
 __`numeric`__
-* `TimeGravityAccelerationMeanZ`
+* `TimeGravityAccelerationMeanZ`  
 Mean of the mean time domain
 gravity linear acceleration signals
 in the Z direction.
 __`numeric`__
-* `TimeGravityAccelerationStandardDeviationX`
+* `TimeGravityAccelerationStandardDeviationX`  
 Mean standard deviations of time domain
 gravity linear acceleration signals
 in the X direction.
 __`numeric`__
-* `TimeGravityAccelerationStandardDeviationY`
+* `TimeGravityAccelerationStandardDeviationY`  
 Mean standard deviations of time domain
 gravity linear acceleration signals
 in the Y direction.
 __`numeric`__
-* `TimeGravityAccelerationStandardDeviationZ`
+* `TimeGravityAccelerationStandardDeviationZ`  
 Mean standard deviations of time domain
 gravity linear acceleration signals
 in the Z direction.
 __`numeric`__
-* `TimeBodyAccelerationJerkMeanX`
+* `TimeBodyAccelerationJerkMeanX`  
 Mean of the mean time domain 
 jerk signals derived
 from body linear acceleration
 in the X direction.
 __`numeric`__
-* `TimeBodyAccelerationJerkMeanY`
+* `TimeBodyAccelerationJerkMeanY`  
 Mean of the mean time domain
 jerk signals derived
 from body linear acceleration
 in the Y direction.
 __`numeric`__
-* `TimeBodyAccelerationJerkMeanZ`
+* `TimeBodyAccelerationJerkMeanZ`  
 Mean of the mean time domain
 jerk signals derived
 from body linear acceleration
 in the Z direction.
 __`numeric`__
-* `TimeBodyAccelerationJerkStandardDeviationX`
+* `TimeBodyAccelerationJerkStandardDeviationX`  
 Mean standard deviations of time domain
 jerk signals derived
 from body linear acceleration
 in the X direction.
 __`numeric`__
-* `TimeBodyAccelerationJerkStandardDeviationY`
+* `TimeBodyAccelerationJerkStandardDeviationY`  
 Mean standard deviations of time domain
 jerk signals derived
 from body linear acceleration
 in the Y direction.
 __`numeric`__
-* `TimeBodyAccelerationJerkStandardDeviationZ`
+* `TimeBodyAccelerationJerkStandardDeviationZ`  
 Mean standard deviations of time domain
 jerk signals derived
 from body linear acceleration
 in the Z direction.
 __`numeric`__
-* `TimeBodyGyroscopeMeanX`
+* `TimeBodyGyroscopeMeanX`  
 Mean of the mean time domain
 body gyroscope angular velocity signals
 in the X direction.
 __`numeric`__
-* `TimeBodyGyroscopeMeanY`
+* `TimeBodyGyroscopeMeanY`  
 Mean of the mean time domain
 body gyroscope angular velocity signals
 in the Y direction.
 __`numeric`__
-* `TimeBodyGyroscopeMeanZ`
+* `TimeBodyGyroscopeMeanZ`  
 Mean of the mean time domain
 body gyroscope angular velocity signals
 in the Z direction.
 __`numeric`__
-* `TimeBodyGyroscopeStandardDeviationX`
+* `TimeBodyGyroscopeStandardDeviationX`  
 Mean standard deviations of time domain
 body gyroscope angular velocity signals
 in the X direction.
 __`numeric`__
-* `TimeBodyGyroscopeStandardDeviationY`
+* `TimeBodyGyroscopeStandardDeviationY`  
 Mean standard deviations of time domain
 body gyroscope angular velocity signals
 in the Y direction.
 __`numeric`__
-* `TimeBodyGyroscopeStandardDeviationZ`
+* `TimeBodyGyroscopeStandardDeviationZ`  
 Mean standard deviations of time domain
 body gyroscope angular velocity signals
 in the Z direction.
 __`numeric`__
-* `TimeBodyGyroscopeJerkMeanX`
+* `TimeBodyGyroscopeJerkMeanX`  
 Mean of the mean time domain
 jerk signals derived
 from body gyroscope angular velocity
 in the X direction.
 __`numeric`__
-* `TimeBodyGyroscopeJerkMeanY`
+* `TimeBodyGyroscopeJerkMeanY`  
 Mean of the mean time domain
 jerk signals derived
 from body gyroscope angular velocity
 in the Y direction.
 __`numeric`__
-* `TimeBodyGyroscopeJerkMeanZ`
+* `TimeBodyGyroscopeJerkMeanZ`  
 Mean of the mean time domain
 jerk signals derived
 from body gyroscope angular velocity
 in the Z direction.
 __`numeric`__
-* `TimeBodyGyroscopeJerkStandardDeviationX`
+* `TimeBodyGyroscopeJerkStandardDeviationX`  
 Mean standard deviations of time domain
 jerk signals derived
 from body gyroscope angular velocity
 in the X direction.
 __`numeric`__
-* `TimeBodyGyroscopeJerkStandardDeviationY`
+* `TimeBodyGyroscopeJerkStandardDeviationY`  
 Mean standard deviations of time domain
 jerk signals derived
 from body gyroscope angular velocity
 in the Y direction.
 __`numeric`__
-* `TimeBodyGyroscopeJerkStandardDeviationZ`
+* `TimeBodyGyroscopeJerkStandardDeviationZ`  
 Mean standard deviations of time domain
 jerk signals derived
 from body gyroscope angular velocity
 in the Z direction.
 __`numeric`__
-* `TimeBodyAccelerationMagnitudeMean`
+* `TimeBodyAccelerationMagnitudeMean`  
 Mean of the mean magnitudes of time domain
 body linear acceleration signals.
 __`numeric`__
-* `TimeBodyAccelerationMagnitudeStandardDeviation`
+* `TimeBodyAccelerationMagnitudeStandardDeviation`  
 Mean standard deviations of the magnitudes of time domain
 body linear acceleration signals.
 __`numeric`__
-* `TimeGravityAccelerationMagnitudeMean`
+* `TimeGravityAccelerationMagnitudeMean`  
 Mean of the mean magnitudes of time domain
 gravity linear acceleration signals.
 __`numeric`__
-* `TimeGravityAccelerationMagnitudeStandardDeviation`
+* `TimeGravityAccelerationMagnitudeStandardDeviation` 
 Mean standard deviations of the magnitudes of time domain
 gravity linear acceleration signals.
 __`numeric`__
-* `TimeBodyAccelerationJerkMagnitudeMean`
+* `TimeBodyAccelerationJerkMagnitudeMean`  
 Mean of the mean magnitudes of time domain
 jerk signals derived
 from body linear acceleration.
 __`numeric`__
-* `TimeBodyAccelerationJerkMagnitudeStandardDeviation`
+* `TimeBodyAccelerationJerkMagnitudeStandardDeviation`  
 Mean standard deviations of the magnitudes of time domain
 jerk signals derived
 from body linear acceleration.
 __`numeric`__
-* `TimeBodyGyroscopeMagnitudeMean`
+* `TimeBodyGyroscopeMagnitudeMean`  
 Mean of the mean magnitudes of time domain
 body gyroscope angular velocity signals.
 __`numeric`__
-* `TimeBodyGyroscopeMagnitudeStandardDeviation`
+* `TimeBodyGyroscopeMagnitudeStandardDeviation`  
 Mean standard deviations of the magnitudes of time domain
 body gyroscope angular velocity signals.
 __`numeric`__
-* `TimeBodyGyroscopeJerkMagnitudeMean`
+* `TimeBodyGyroscopeJerkMagnitudeMean`  
 Mean of the mean magnitudes 
 of time domain
 jerk signals derived
 from body gyroscope angular velocity.
 __`numeric`__
-* `TimeBodyGyroscopeJerkMagnitudeStandardDeviation`
+* `TimeBodyGyroscopeJerkMagnitudeStandardDeviation`  
 Mean standard deviations of the magnitudes 
 of time domain
 jerk signals derived
 from body gyroscope angular velocity.
 __`numeric`__
-* `FrequencyBodyAccelerationMeanX`
+* `FrequencyBodyAccelerationMeanX`  
 Mean of the mean frequency domain 
 body linear acceleration signals
 in the X direction.
 __`numeric`__
-* `FrequencyBodyAccelerationMeanY`
+* `FrequencyBodyAccelerationMeanY`  
 Mean of the mean frequency domain
 body linear acceleration signals
 in the Y direction.
 __`numeric`__
-* `FrequencyBodyAccelerationMeanZ`
+* `FrequencyBodyAccelerationMeanZ`  
 Mean of the mean frequency domain
 body linear acceleration signals
 in the Z direction.
 __`numeric`__
-* `FrequencyBodyAccelerationStandardDeviationX`
+* `FrequencyBodyAccelerationStandardDeviationX`  
 Mean standard deviations of frequency domain
 body linear acceleration signals
 in the X direction.
 __`numeric`__
-* `FrequencyBodyAccelerationStandardDeviationY`
+* `FrequencyBodyAccelerationStandardDeviationY`  
 Mean standard deviations of frequency domain
 body linear acceleration signals
 in the Y direction.
 __`numeric`__
-* `FrequencyBodyAccelerationStandardDeviationZ`
+* `FrequencyBodyAccelerationStandardDeviationZ`  
 Mean standard deviations of frequency domain
 body linear acceleration signals
 in the Z direction.
 __`numeric`__
-* `FrequencyBodyAccelerationJerkMeanX`
+* `FrequencyBodyAccelerationJerkMeanX`  
 Mean of the mean frequency domain
 jerk signals derived
 from body linear acceleration
 in the X direction.
 __`numeric`__
-* `FrequencyBodyAccelerationJerkMeanY`
+* `FrequencyBodyAccelerationJerkMeanY`  
 Mean of the mean frequency domain
 jerk signals derived
 from body linear acceleration
 in the Y direction.
 __`numeric`__
-* `FrequencyBodyAccelerationJerkMeanZ`
+* `FrequencyBodyAccelerationJerkMeanZ`  
 Mean of the mean frequency domain
 jerk signals derived
 from body linear acceleration
 in the Z direction.
 __`numeric`__
-* `FrequencyBodyAccelerationJerkStandardDeviationX`
+* `FrequencyBodyAccelerationJerkStandardDeviationX`  
 Mean standard deviations of frequency domain
 jerk signals derived
 from body linear acceleration
 in the X direction.
 __`numeric`__
-* `FrequencyBodyAccelerationJerkStandardDeviationY`
+* `FrequencyBodyAccelerationJerkStandardDeviationY`  
 Mean standard deviations of frequency domain
 jerk signals derived
 from body linear acceleration
 in the Y direction.
 __`numeric`__
-* `FrequencyBodyAccelerationJerkStandardDeviationZ`
+* `FrequencyBodyAccelerationJerkStandardDeviationZ`  
 Mean standard deviations of frequency domain
 jerk signals derived
 from body linear acceleration
 in the Z direction.
 __`numeric`__
-* `FrequencyBodyGyroscopeMeanX`
+* `FrequencyBodyGyroscopeMeanX`  
 Mean of the mean frequency domain 
 body gyroscope angular velocity signals
 in the X direction.
 __`numeric`__
-* `FrequencyBodyGyroscopeMeanY`
+* `FrequencyBodyGyroscopeMeanY`  
 Mean of the mean frequency domain
 body gyroscope angular velocity signals
 in the Y direction.
 __`numeric`__
-* `FrequencyBodyGyroscopeMeanZ`
+* `FrequencyBodyGyroscopeMeanZ`  
 Mean of the mean frequency domain
 body gyroscope angular velocity signals
 in the Z direction.
 __`numeric`__
-* `FrequencyBodyGyroscopeStandardDeviationX`
+* `FrequencyBodyGyroscopeStandardDeviationX`  
 Mean standard deviations of frequency domain
 body gyroscope angular velocity signals
 in the X direction.
 __`numeric`__
-* `FrequencyBodyGyroscopeStandardDeviationY`
+* `FrequencyBodyGyroscopeStandardDeviationY`  
 Mean standard deviations of frequency domain
 body gyroscope angular velocity signals
 in the Y direction.
 __`numeric`__
-* `FrequencyBodyGyroscopeStandardDeviationZ`
+* `FrequencyBodyGyroscopeStandardDeviationZ`  
 Mean standard deviations of frequency domain
 body gyroscope angular velocity signals
 in the Z direction.
 __`numeric`__
-* `FrequencyBodyAccelerationMagnitudeMean`
+* `FrequencyBodyAccelerationMagnitudeMean`  
 Mean of the mean magnitudes of frequency domain
 body linear acceleration signals.
 __`numeric`__
-* `FrequencyBodyAccelerationMagnitudeStandardDeviation`
+* `FrequencyBodyAccelerationMagnitudeStandardDeviation`  
 Mean standard deviations of the magnitudes of frequency domain
 body linear acceleration signals.
 __`numeric`__
-* `FrequencyBodyAccelerationJerkMagnitudeMean`
+* `FrequencyBodyAccelerationJerkMagnitudeMean`  
 Mean of the mean magnitudes of frequency domain
 jerk signals derived
 from body linear acceleration.
 __`numeric`__
-* `FrequencyBodyAccelerationJerkMagnitudeStandardDeviation`
+* `FrequencyBodyAccelerationJerkMagnitudeStandardDeviation`  
 Mean standard deviations of magnitudes of frequency domain
 jerk signals derived
 from body linear acceleration.
 __`numeric`__
-* `FrequencyBodyGyroscopeMagnitudeMean`
+* `FrequencyBodyGyroscopeMagnitudeMean`  
 Mean of the mean magnitudes of frequency domain
 body gyroscope angular velocity signals.
 __`numeric`__
-* `FrequencyBodyGyroscopeMagnitudeStandardDeviation`
+* `FrequencyBodyGyroscopeMagnitudeStandardDeviation`  
 Mean standard deviations of magnitudes of frequency domain 
 body gyroscope angular velocity signals.
 __`numeric`__
-* `FrequencyBodyGyroscopeJerkMagnitudeMean`
+* `FrequencyBodyGyroscopeJerkMagnitudeMean`  
 Mean of the mean magnitudes of frequency domain
 jerk signals derived
 from body gyroscope angular velocity.
 __`numeric`__
-* `FrequencyBodyGyroscopeJerkMagnitudeStandardDeviation`
+* `FrequencyBodyGyroscopeJerkMagnitudeStandardDeviation`  
 Mean standard deviations of magnitudes of frequency domain
 jerk signals derived
 from body gyroscope angular velocity.
