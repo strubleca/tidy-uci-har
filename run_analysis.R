@@ -181,10 +181,10 @@ niceNames <- gsub("Acc", "Acceleration", niceNames)
 # Rule 6. Gyro is replaced with Gyroscope.
 niceNames <- gsub("Gyro", "Gyroscope", niceNames)
 
-# Rule 6. Mag is replaced with Magnitude.
+# Rule 7. Mag is replaced with Magnitude.
 niceNames <- gsub("Mag", "Magnitude", niceNames)
 
-# Rule 7. Remove dashes (-)
+# Rule 8. Remove dashes (-)
 niceNames <- gsub("-", "", niceNames)
 
 # Assign new names to the desired feature data
