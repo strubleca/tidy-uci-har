@@ -184,71 +184,73 @@ the
 section above,
 the units are not immediately apparent.
 
-* `Subject` The subject ID for the observations.  __`integer`__
-* `Activity` The type of activity being performed for the observations. __`factor`__ 
-* `TimeBodyAccelerationMeanX` Time domain signals of __`numeric`__
-* `TimeBodyAccelerationMeanY` Time domain signals of __`numeric`__ 
-* `TimeBodyAccelerationMeanZ` Time domain signals of __`numeric`__
-* `TimeBodyAccelerationStandardDeviationX` Time domain signals of __`numeric`__
-* `TimeBodyAccelerationStandardDeviationY` Time domain signals of __`numeric`__
-* `TimeBodyAccelerationStandardDeviationZ` Time domain signals of __`numeric`__
-* `TimeGravityAccelerationMeanX` Time domain signals of __`numeric`__
-* `TimeGravityAccelerationMeanY` Time domain signals of __`numeric`__
-* `TimeGravityAccelerationMeanZ` Time domain signals of __`numeric`__
-* `TimeGravityAccelerationStandardDeviationX` Time domain signals of __`numeric`__
-* `TimeGravityAccelerationStandardDeviationY` Time domain signals of __`numeric`__
-* `TimeGravityAccelerationStandardDeviationZ` Time domain signals of __`numeric`__
-* `TimeBodyAccelerationJerkMeanX` Time domain signals of __`numeric`__
-* `TimeBodyAccelerationJerkMeanY` Time domain signals of __`numeric`__
-* `TimeBodyAccelerationJerkMeanZ` Time domain signals of __`numeric`__
-* `TimeBodyAccelerationJerkStandardDeviationX` Time domain signals of __`numeric`__
-* `TimeBodyAccelerationJerkStandardDeviationY` Time domain signals of __`numeric`__
-* `TimeBodyAccelerationJerkStandardDeviationZ` Time domain signals of __`numeric`__
-* `TimeBodyGyroscopeMeanX` Time domain signals of __`numeric`__
-* `TimeBodyGyroscopeMeanY` Time domain signals of __`numeric`__
-* `TimeBodyGyroscopeMeanZ` Time domain signals of __`numeric`__
-* `TimeBodyGyroscopeStandardDeviationX` Time domain signals of __`numeric`__
-* `TimeBodyGyroscopeStandardDeviationY` Time domain signals of __`numeric`__
-* `TimeBodyGyroscopeStandardDeviationZ` Time domain signals of __`numeric`__
-* `TimeBodyGyroscopeJerkMeanX` Time domain signals of __`numeric`__
-* `TimeBodyGyroscopeJerkMeanY` Time domain signals of __`numeric`__
-* `TimeBodyGyroscopeJerkMeanZ` Time domain signals of __`numeric`__
-* `TimeBodyGyroscopeJerkStandardDeviationX` Time domain signals of __`numeric`__
-* `TimeBodyGyroscopeJerkStandardDeviationY` Time domain signals of __`numeric`__
-* `TimeBodyGyroscopeJerkStandardDeviationZ` Time domain signals of __`numeric`__
-* `TimeBodyAccelerationMagnitudeMean` Time domain signals of __`numeric`__
-* `TimeBodyAccelerationMagnitudeStandardDeviation` Time domain signals of __`numeric`__
-* `TimeGravityAccelerationMagnitudeMean` Time domain signals of __`numeric`__
-* `TimeGravityAccelerationMagnitudeStandardDeviation` Time domain signals of __`numeric`__
-* `TimeBodyAccelerationJerkMagnitudeMean` Time domain signals of __`numeric`__
-* `TimeBodyAccelerationJerkMagnitudeStandardDeviation` Time domain signals of __`numeric`__
-* `TimeBodyGyroscopeMagnitudeMean` Time domain signals of __`numeric`__
-* `TimeBodyGyroscopeMagnitudeStandardDeviation` Time domain signals of __`numeric`__
-* `TimeBodyGyroscopeJerkMagnitudeMean` Time domain signals of __`numeric`__
-* `TimeBodyGyroscopeJerkMagnitudeStandardDeviation` Time domain signals of __`numeric`__
-* `FrequencyBodyAccelerationMeanX` Frequency domain signals of __`numeric`__
-* `FrequencyBodyAccelerationMeanY` Frequency domain signals of __`numeric`__
-* `FrequencyBodyAccelerationMeanZ` Frequency domain signals of __`numeric`__
-* `FrequencyBodyAccelerationStandardDeviationX` Frequency domain signals of __`numeric`__
-* `FrequencyBodyAccelerationStandardDeviationY` Frequency domain signals of __`numeric`__
-* `FrequencyBodyAccelerationStandardDeviationZ` Frequency domain signals of __`numeric`__
-* `FrequencyBodyAccelerationJerkMeanX` Frequency domain signals of __`numeric`__
-* `FrequencyBodyAccelerationJerkMeanY` Frequency domain signals of __`numeric`__
-* `FrequencyBodyAccelerationJerkMeanZ` Frequency domain signals of __`numeric`__
-* `FrequencyBodyAccelerationJerkStandardDeviationX` Frequency domain signals of __`numeric`__
-* `FrequencyBodyAccelerationJerkStandardDeviationY` Frequency domain signals of __`numeric`__
-* `FrequencyBodyAccelerationJerkStandardDeviationZ` Frequency domain signals of __`numeric`__
-* `FrequencyBodyGyroscopeMeanX` Frequency domain signals of __`numeric`__
-* `FrequencyBodyGyroscopeMeanY` Frequency domain signals of __`numeric`__
-* `FrequencyBodyGyroscopeMeanZ` Frequency domain signals of __`numeric`__
-* `FrequencyBodyGyroscopeStandardDeviationX` Frequency domain signals of __`numeric`__
-* `FrequencyBodyGyroscopeStandardDeviationY` Frequency domain signals of __`numeric`__
-* `FrequencyBodyGyroscopeStandardDeviationZ` Frequency domain signals of __`numeric`__
-* `FrequencyBodyAccelerationMagnitudeMean` Frequency domain signals of __`numeric`__
-* `FrequencyBodyAccelerationMagnitudeStandardDeviation` Frequency domain signals of __`numeric`__
-* `FrequencyBodyBodyAccelerationJerkMagnitudeMean` Frequency domain signals of __`numeric`__
-* `FrequencyBodyBodyAccelerationJerkMagnitudeStandardDeviation` Frequency domain signals of __`numeric`__
-* `FrequencyBodyBodyGyroscopeMagnitudeMean` Frequency domain signals of __`numeric`__
-* `FrequencyBodyBodyGyroscopeMagnitudeStandardDeviation` Frequency domain signals of __`numeric`__
-* `FrequencyBodyBodyGyroscopeJerkMagnitudeMean` Frequency domain signals of __`numeric`__
-* `FrequencyBodyBodyGyroscopeJerkMagnitudeStandardDeviation` Frequency domain signals of __`numeric`__
+* `Subject` The subject ID for the measurements in the same row. 
+ __`integer`__
+* `Activity` The type of activity being performed for the measurements in the 
+same row. __`factor`__ 
+* `TimeBodyAccelerationMeanX` Mean time domain signals of __`numeric`__
+* `TimeBodyAccelerationMeanY` Mean time domain signals of __`numeric`__ 
+* `TimeBodyAccelerationMeanZ` Mean time domain signals of __`numeric`__
+* `TimeBodyAccelerationStandardDeviationX` Mean time domain signals of __`numeric`__
+* `TimeBodyAccelerationStandardDeviationY` Mean time domain signals of __`numeric`__
+* `TimeBodyAccelerationStandardDeviationZ` Mean time domain signals of __`numeric`__
+* `TimeGravityAccelerationMeanX` Mean time domain signals of __`numeric`__
+* `TimeGravityAccelerationMeanY` Mean time domain signals of __`numeric`__
+* `TimeGravityAccelerationMeanZ` Mean time domain signals of __`numeric`__
+* `TimeGravityAccelerationStandardDeviationX` Mean time domain signals of __`numeric`__
+* `TimeGravityAccelerationStandardDeviationY` Mean time domain signals of __`numeric`__
+* `TimeGravityAccelerationStandardDeviationZ` Mean time domain signals of __`numeric`__
+* `TimeBodyAccelerationJerkMeanX` Mean time domain signals of __`numeric`__
+* `TimeBodyAccelerationJerkMeanY` Mean time domain signals of __`numeric`__
+* `TimeBodyAccelerationJerkMeanZ` Mean time domain signals of __`numeric`__
+* `TimeBodyAccelerationJerkStandardDeviationX` Mean time domain signals of __`numeric`__
+* `TimeBodyAccelerationJerkStandardDeviationY` Mean time domain signals of __`numeric`__
+* `TimeBodyAccelerationJerkStandardDeviationZ` Mean time domain signals of __`numeric`__
+* `TimeBodyGyroscopeMeanX` Mean time domain signals of __`numeric`__
+* `TimeBodyGyroscopeMeanY` Mean time domain signals of __`numeric`__
+* `TimeBodyGyroscopeMeanZ` Mean time domain signals of __`numeric`__
+* `TimeBodyGyroscopeStandardDeviationX` Mean time domain signals of __`numeric`__
+* `TimeBodyGyroscopeStandardDeviationY` Mean time domain signals of __`numeric`__
+* `TimeBodyGyroscopeStandardDeviationZ` Mean time domain signals of __`numeric`__
+* `TimeBodyGyroscopeJerkMeanX` Mean time domain signals of __`numeric`__
+* `TimeBodyGyroscopeJerkMeanY` Mean time domain signals of __`numeric`__
+* `TimeBodyGyroscopeJerkMeanZ` Mean time domain signals of __`numeric`__
+* `TimeBodyGyroscopeJerkStandardDeviationX` Mean time domain signals of __`numeric`__
+* `TimeBodyGyroscopeJerkStandardDeviationY` Mean time domain signals of __`numeric`__
+* `TimeBodyGyroscopeJerkStandardDeviationZ` Mean time domain signals of __`numeric`__
+* `TimeBodyAccelerationMagnitudeMean` Mean time domain signals of __`numeric`__
+* `TimeBodyAccelerationMagnitudeStandardDeviation` Mean time domain signals of __`numeric`__
+* `TimeGravityAccelerationMagnitudeMean` Mean time domain signals of __`numeric`__
+* `TimeGravityAccelerationMagnitudeStandardDeviation` Mean time domain signals of __`numeric`__
+* `TimeBodyAccelerationJerkMagnitudeMean` Mean time domain signals of __`numeric`__
+* `TimeBodyAccelerationJerkMagnitudeStandardDeviation` Mean time domain signals of __`numeric`__
+* `TimeBodyGyroscopeMagnitudeMean` Mean time domain signals of __`numeric`__
+* `TimeBodyGyroscopeMagnitudeStandardDeviation` Mean time domain signals of __`numeric`__
+* `TimeBodyGyroscopeJerkMagnitudeMean` Mean time domain signals of __`numeric`__
+* `TimeBodyGyroscopeJerkMagnitudeStandardDeviation` Mean time domain signals of __`numeric`__
+* `FrequencyBodyAccelerationMeanX` Mean frequency domain signals of __`numeric`__
+* `FrequencyBodyAccelerationMeanY` Mean frequency domain signals of __`numeric`__
+* `FrequencyBodyAccelerationMeanZ` Mean frequency domain signals of __`numeric`__
+* `FrequencyBodyAccelerationStandardDeviationX` Mean frequency domain signals of __`numeric`__
+* `FrequencyBodyAccelerationStandardDeviationY` Mean frequency domain signals of __`numeric`__
+* `FrequencyBodyAccelerationStandardDeviationZ` Mean frequency domain signals of __`numeric`__
+* `FrequencyBodyAccelerationJerkMeanX` Mean frequency domain signals of __`numeric`__
+* `FrequencyBodyAccelerationJerkMeanY` Mean frequency domain signals of __`numeric`__
+* `FrequencyBodyAccelerationJerkMeanZ` Mean frequency domain signals of __`numeric`__
+* `FrequencyBodyAccelerationJerkStandardDeviationX` Mean frequency domain signals of __`numeric`__
+* `FrequencyBodyAccelerationJerkStandardDeviationY` Mean frequency domain signals of __`numeric`__
+* `FrequencyBodyAccelerationJerkStandardDeviationZ` Mean frequency domain signals of __`numeric`__
+* `FrequencyBodyGyroscopeMeanX` Mean frequency domain signals of __`numeric`__
+* `FrequencyBodyGyroscopeMeanY` Mean frequency domain signals of __`numeric`__
+* `FrequencyBodyGyroscopeMeanZ` Mean frequency domain signals of __`numeric`__
+* `FrequencyBodyGyroscopeStandardDeviationX` Mean frequency domain signals of __`numeric`__
+* `FrequencyBodyGyroscopeStandardDeviationY` Mean frequency domain signals of __`numeric`__
+* `FrequencyBodyGyroscopeStandardDeviationZ` Mean frequency domain signals of __`numeric`__
+* `FrequencyBodyAccelerationMagnitudeMean` Mean frequency domain signals of __`numeric`__
+* `FrequencyBodyAccelerationMagnitudeStandardDeviation` Mean frequency domain signals of __`numeric`__
+* `FrequencyBodyBodyAccelerationJerkMagnitudeMean` Mean frequency domain signals of __`numeric`__
+* `FrequencyBodyBodyAccelerationJerkMagnitudeStandardDeviation` Mean frequency domain signals of __`numeric`__
+* `FrequencyBodyBodyGyroscopeMagnitudeMean` Mean frequency domain signals of __`numeric`__
+* `FrequencyBodyBodyGyroscopeMagnitudeStandardDeviation` Mean frequency domain signals of __`numeric`__
+* `FrequencyBodyBodyGyroscopeJerkMagnitudeMean` Mean frequency domain signals of __`numeric`__
+* `FrequencyBodyBodyGyroscopeJerkMagnitudeStandardDeviation` Mean frequency domain signals of __`numeric`__
