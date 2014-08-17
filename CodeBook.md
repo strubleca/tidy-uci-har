@@ -47,7 +47,7 @@ The first step specified in the course project stated,
 
 Measurement data from training and test sets are kept in the
 `X_train.txt` and `X_test.txt` files in the respective `train`
-and `test directories. To merge these data, the `rbind()` function
+and `test` directories. To merge these data, the `rbind()` function
 in R was used, to perform row-wise concatenation. The resulting
 data are kept in the `allX` variable as a matrix.
 
