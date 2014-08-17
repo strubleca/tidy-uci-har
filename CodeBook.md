@@ -7,7 +7,7 @@ was to download and tidy the
 [Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 available from the University of California, Irvine Machine Learning Repository.
 
-The data set\'s abstract provided at UCI is
+The data set's abstract provided at UCI is
 
 > Human Activity Recognition database built from the recordings of 30 subjects
 > performing activities of daily living (ADL) while carrying a 
@@ -67,7 +67,7 @@ The second step specified in the course project stated,
 > Extracts only the measurements on the mean and standard 
 > deviation for each measurement.
 
-Based on reading the raw data set\'s code book, it was determined that
+Based on reading the raw data set's code book, it was determined that
 only measurements containing mean() and std() would be included.
 
 ### Activity Naming
