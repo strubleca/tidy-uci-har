@@ -180,73 +180,71 @@ the
 section above,
 the units are not immediately apparent.
 
-* `Subject` - Type: __`integer`__ - Description: The subject ID for the 
-observations.
-* `Activity` - Type: __`factor`__ - Description: The type of activity being 
-performed for the observations.
-* `TimeBodyAccelerationMeanX` - Type: __`numeric`__ - Description:
-* `TimeBodyAccelerationMeanY`- Type: __`numeric`__ - Description: 
-* `TimeBodyAccelerationMeanZ`- Type: __`numeric`__ - Description:
-* `TimeBodyAccelerationStandardDeviationX`- Type: __`numeric`__ - Description:
-* `TimeBodyAccelerationStandardDeviationY`- Type: __`numeric`__ - Description:
-* `TimeBodyAccelerationStandardDeviationZ`- Type: __`numeric`__ - Description:
-* `TimeGravityAccelerationMeanX`- Type: __`numeric`__ - Description:
-* `TimeGravityAccelerationMeanY`- Type: __`numeric`__ - Description:
-* `TimeGravityAccelerationMeanZ`- Type: __`numeric`__ - Description:
-* `TimeGravityAccelerationStandardDeviationX`- Type: __`numeric`__ - Description:
-* `TimeGravityAccelerationStandardDeviationY`- Type: __`numeric`__ - Description:
-* `TimeGravityAccelerationStandardDeviationZ`- Type: __`numeric`__ - Description:
-* `TimeBodyAccelerationJerkMeanX`- Type: __`numeric`__ - Description:
-* `TimeBodyAccelerationJerkMeanY`- Type: __`numeric`__ - Description:
-* `TimeBodyAccelerationJerkMeanZ`- Type: __`numeric`__ - Description:
-* `TimeBodyAccelerationJerkStandardDeviationX`- Type: __`numeric`__ - Description:
-* `TimeBodyAccelerationJerkStandardDeviationY`- Type: __`numeric`__ - Description:
-* `TimeBodyAccelerationJerkStandardDeviationZ`- Type: __`numeric`__ - Description:
-* `TimeBodyGyroscopeMeanX`- Type: __`numeric`__ - Description:
-* `TimeBodyGyroscopeMeanY`- Type: __`numeric`__ - Description:
-* `TimeBodyGyroscopeMeanZ`- Type: __`numeric`__ - Description:
-* `TimeBodyGyroscopeStandardDeviationX`- Type: __`numeric`__ - Description:
-* `TimeBodyGyroscopeStandardDeviationY`- Type: __`numeric`__ - Description:
-* `TimeBodyGyroscopeStandardDeviationZ`- Type: __`numeric`__ - Description:
-* `TimeBodyGyroscopeJerkMeanX`- Type: __`numeric`__ - Description:
-* `TimeBodyGyroscopeJerkMeanY`- Type: __`numeric`__ - Description:
-* `TimeBodyGyroscopeJerkMeanZ`- Type: __`numeric`__ - Description:
-* `TimeBodyGyroscopeJerkStandardDeviationX`- Type: __`numeric`__ - Description:
-* `TimeBodyGyroscopeJerkStandardDeviationY`- Type: __`numeric`__ - Description:
-* `TimeBodyGyroscopeJerkStandardDeviationZ`- Type: __`numeric`__ - Description:
-* `TimeBodyAccelerationMagnitudeMean`- Type: __`numeric`__ - Description:
-* `TimeBodyAccelerationMagnitudeStandardDeviation`- Type: __`numeric`__ - Description:
-* `TimeGravityAccelerationMagnitudeMean`- Type: __`numeric`__ - Description:
-* `TimeGravityAccelerationMagnitudeStandardDeviation`- Type: __`numeric`__ - Description:
-* `TimeBodyAccelerationJerkMagnitudeMean`- Type: __`numeric`__ - Description:
-* `TimeBodyAccelerationJerkMagnitudeStandardDeviation`- Type: __`numeric`__ - Description:
-* `TimeBodyGyroscopeMagnitudeMean`- Type: __`numeric`__ - Description:
-* `TimeBodyGyroscopeMagnitudeStandardDeviation`- Type: __`numeric`__ - Description:
-* `TimeBodyGyroscopeJerkMagnitudeMean`- Type: __`numeric`__ - Description:
-* `TimeBodyGyroscopeJerkMagnitudeStandardDeviation`- Type: __`numeric`__ - Description:
-* `FrequencyBodyAccelerationMeanX`- Type: __`numeric`__ - Description:
-* `FrequencyBodyAccelerationMeanY`- Type: __`numeric`__ - Description:
-* `FrequencyBodyAccelerationMeanZ`- Type: __`numeric`__ - Description:
-* `FrequencyBodyAccelerationStandardDeviationX`- Type: __`numeric`__ - Description:
-* `FrequencyBodyAccelerationStandardDeviationY`- Type: __`numeric`__ - Description:
-* `FrequencyBodyAccelerationStandardDeviationZ`- Type: __`numeric`__ - Description:
-* `FrequencyBodyAccelerationJerkMeanX`- Type: __`numeric`__ - Description:
-* `FrequencyBodyAccelerationJerkMeanY`- Type: __`numeric`__ - Description:
-* `FrequencyBodyAccelerationJerkMeanZ`- Type: __`numeric`__ - Description:
-* `FrequencyBodyAccelerationJerkStandardDeviationX`- Type: __`numeric`__ - Description:
-* `FrequencyBodyAccelerationJerkStandardDeviationY`- Type: __`numeric`__ - Description:
-* `FrequencyBodyAccelerationJerkStandardDeviationZ`- Type: __`numeric`__ - Description:
-* `FrequencyBodyGyroscopeMeanX`- Type: __`numeric`__ - Description:
-* `FrequencyBodyGyroscopeMeanY`- Type: __`numeric`__ - Description:
-* `FrequencyBodyGyroscopeMeanZ`- Type: __`numeric`__ - Description:
-* `FrequencyBodyGyroscopeStandardDeviationX`- Type: __`numeric`__ - Description:
-* `FrequencyBodyGyroscopeStandardDeviationY`- Type: __`numeric`__ - Description:
-* `FrequencyBodyGyroscopeStandardDeviationZ`- Type: __`numeric`__ - Description:
-* `FrequencyBodyAccelerationMagnitudeMean`- Type: __`numeric`__ - Description:
-* `FrequencyBodyAccelerationMagnitudeStandardDeviation`- Type: __`numeric`__ - Description:
-* `FrequencyBodyBodyAccelerationJerkMagnitudeMean`- Type: __`numeric`__ - Description:
-* `FrequencyBodyBodyAccelerationJerkMagnitudeStandardDeviation`- Type: __`numeric`__ - Description:
-* `FrequencyBodyBodyGyroscopeMagnitudeMean`- Type: __`numeric`__ - Description:
-* `FrequencyBodyBodyGyroscopeMagnitudeStandardDeviation`- Type: __`numeric`__ - Description:
-* `FrequencyBodyBodyGyroscopeJerkMagnitudeMean`- Type: __`numeric`__ - Description:
-* `FrequencyBodyBodyGyroscopeJerkMagnitudeStandardDeviation`- Type: __`numeric`__ - Description:
+* `Subject` The subject ID for the observations.  __`integer`__
+* `Activity` The type of activity being performed for the observations. __`factor`__ 
+* `TimeBodyAccelerationMeanX` Time domain measurement of __`numeric`__
+* `TimeBodyAccelerationMeanY` Time domain measurement of __`numeric`__ 
+* `TimeBodyAccelerationMeanZ` Time domain measurement of __`numeric`__
+* `TimeBodyAccelerationStandardDeviationX` Time domain measurement of __`numeric`__
+* `TimeBodyAccelerationStandardDeviationY` Time domain measurement of __`numeric`__
+* `TimeBodyAccelerationStandardDeviationZ` Time domain measurement of __`numeric`__
+* `TimeGravityAccelerationMeanX` Time domain measurement of __`numeric`__
+* `TimeGravityAccelerationMeanY` Time domain measurement of __`numeric`__
+* `TimeGravityAccelerationMeanZ` Time domain measurement of __`numeric`__
+* `TimeGravityAccelerationStandardDeviationX` Time domain measurement of __`numeric`__
+* `TimeGravityAccelerationStandardDeviationY` Time domain measurement of __`numeric`__
+* `TimeGravityAccelerationStandardDeviationZ` Time domain measurement of __`numeric`__
+* `TimeBodyAccelerationJerkMeanX` Time domain measurement of __`numeric`__
+* `TimeBodyAccelerationJerkMeanY` Time domain measurement of __`numeric`__
+* `TimeBodyAccelerationJerkMeanZ` Time domain measurement of __`numeric`__
+* `TimeBodyAccelerationJerkStandardDeviationX` Time domain measurement of __`numeric`__
+* `TimeBodyAccelerationJerkStandardDeviationY` Time domain measurement of __`numeric`__
+* `TimeBodyAccelerationJerkStandardDeviationZ` Time domain measurement of __`numeric`__
+* `TimeBodyGyroscopeMeanX` Time domain measurement of __`numeric`__
+* `TimeBodyGyroscopeMeanY` Time domain measurement of __`numeric`__
+* `TimeBodyGyroscopeMeanZ` Time domain measurement of __`numeric`__
+* `TimeBodyGyroscopeStandardDeviationX` Time domain measurement of __`numeric`__
+* `TimeBodyGyroscopeStandardDeviationY` Time domain measurement of __`numeric`__
+* `TimeBodyGyroscopeStandardDeviationZ` Time domain measurement of __`numeric`__
+* `TimeBodyGyroscopeJerkMeanX` Time domain measurement of __`numeric`__
+* `TimeBodyGyroscopeJerkMeanY` Time domain measurement of __`numeric`__
+* `TimeBodyGyroscopeJerkMeanZ` Time domain measurement of __`numeric`__
+* `TimeBodyGyroscopeJerkStandardDeviationX` Time domain measurement of __`numeric`__
+* `TimeBodyGyroscopeJerkStandardDeviationY` Time domain measurement of __`numeric`__
+* `TimeBodyGyroscopeJerkStandardDeviationZ` Time domain measurement of __`numeric`__
+* `TimeBodyAccelerationMagnitudeMean` Time domain measurement of __`numeric`__
+* `TimeBodyAccelerationMagnitudeStandardDeviation` Time domain measurement of __`numeric`__
+* `TimeGravityAccelerationMagnitudeMean` Time domain measurement of __`numeric`__
+* `TimeGravityAccelerationMagnitudeStandardDeviation` Time domain measurement of __`numeric`__
+* `TimeBodyAccelerationJerkMagnitudeMean` Time domain measurement of __`numeric`__
+* `TimeBodyAccelerationJerkMagnitudeStandardDeviation` Time domain measurement of __`numeric`__
+* `TimeBodyGyroscopeMagnitudeMean` Time domain measurement of __`numeric`__
+* `TimeBodyGyroscopeMagnitudeStandardDeviation` Time domain measurement of __`numeric`__
+* `TimeBodyGyroscopeJerkMagnitudeMean` Time domain measurement of __`numeric`__
+* `TimeBodyGyroscopeJerkMagnitudeStandardDeviation` Time domain measurement of __`numeric`__
+* `FrequencyBodyAccelerationMeanX` Frequency domain measurement of __`numeric`__
+* `FrequencyBodyAccelerationMeanY` Frequency domain measurement of __`numeric`__
+* `FrequencyBodyAccelerationMeanZ` Frequency domain measurement of __`numeric`__
+* `FrequencyBodyAccelerationStandardDeviationX` Frequency domain measurement of __`numeric`__
+* `FrequencyBodyAccelerationStandardDeviationY` Frequency domain measurement of __`numeric`__
+* `FrequencyBodyAccelerationStandardDeviationZ` Frequency domain measurement of __`numeric`__
+* `FrequencyBodyAccelerationJerkMeanX` Frequency domain measurement of __`numeric`__
+* `FrequencyBodyAccelerationJerkMeanY` Frequency domain measurement of __`numeric`__
+* `FrequencyBodyAccelerationJerkMeanZ` Frequency domain measurement of __`numeric`__
+* `FrequencyBodyAccelerationJerkStandardDeviationX` Frequency domain measurement of __`numeric`__
+* `FrequencyBodyAccelerationJerkStandardDeviationY` Frequency domain measurement of __`numeric`__
+* `FrequencyBodyAccelerationJerkStandardDeviationZ` Frequency domain measurement of __`numeric`__
+* `FrequencyBodyGyroscopeMeanX` Frequency domain measurement of __`numeric`__
+* `FrequencyBodyGyroscopeMeanY` Frequency domain measurement of __`numeric`__
+* `FrequencyBodyGyroscopeMeanZ` Frequency domain measurement of __`numeric`__
+* `FrequencyBodyGyroscopeStandardDeviationX` Frequency domain measurement of __`numeric`__
+* `FrequencyBodyGyroscopeStandardDeviationY` Frequency domain measurement of __`numeric`__
+* `FrequencyBodyGyroscopeStandardDeviationZ` Frequency domain measurement of __`numeric`__
+* `FrequencyBodyAccelerationMagnitudeMean` Frequency domain measurement of __`numeric`__
+* `FrequencyBodyAccelerationMagnitudeStandardDeviation` Frequency domain measurement of __`numeric`__
+* `FrequencyBodyBodyAccelerationJerkMagnitudeMean` Frequency domain measurement of __`numeric`__
+* `FrequencyBodyBodyAccelerationJerkMagnitudeStandardDeviation` Frequency domain measurement of __`numeric`__
+* `FrequencyBodyBodyGyroscopeMagnitudeMean` Frequency domain measurement of __`numeric`__
+* `FrequencyBodyBodyGyroscopeMagnitudeStandardDeviation` Frequency domain measurement of __`numeric`__
+* `FrequencyBodyBodyGyroscopeJerkMagnitudeMean` Frequency domain measurement of __`numeric`__
+* `FrequencyBodyBodyGyroscopeJerkMagnitudeStandardDeviation` Frequency domain measurement of __`numeric`__
