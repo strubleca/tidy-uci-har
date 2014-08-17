@@ -108,7 +108,11 @@ The second step specified in the course project stated,
 > deviation for each measurement.
 
 Based on reading the raw data set's code book, it was determined that
-only measurements containing mean() and std() would be included.
+only measurements containing mean() and std() would be included. This
+results in 66 selected columns. Other possible columns include meanFreq()
+and angle metrics interacting with some means. These additional columns,
+however, are not included because they are not strictly means or standard
+deviations of measures, but other values altogether.
 
 The selected columns from `allX` are placed into the `desiredX` variable.
 
