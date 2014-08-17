@@ -175,7 +175,9 @@ These are the variable descriptions for the columns in
 `tidy_UCI_HAR_Dataset.txt`. R types for the columns are used to describe
 the data type for each column. All measurement variables are aggregations
 by the mean of the original data columns. As stated in
-the "Preprocessing By Original Authors" section above,
+the 
+[Preprocessing By Original Authors](#preprocessing-by-original-authors)
+section above,
 the units are not immediately apparent.
 
 * `Subject` - Type: __`integer`__ - Description: The subject ID for the 
