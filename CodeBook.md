@@ -68,7 +68,7 @@ Further preprocessing was performed by the original authors as follows:
 Per the instructions for the course project,
 the raw data was downloaded from the URL
 
-https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+<https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip>
 
 which contains a cached copy of the original data set.
 
@@ -76,7 +76,7 @@ which contains a cached copy of the original data set.
 
 Several transformations were performed on the raw data set
 in preparation for the final tidy data set. The following
-subsections with in this section detail the transformation
+subsections within this section detail the transformation
 performed.
 
 ### Merging Training and Test Datasets
