@@ -189,7 +189,7 @@ standard gravity units 'g', and units for angular velocity are
 corresponding linear acceleration and angular velocity values,
 giving units of something like 'g/s' (which results in per seconds 
 cubed if g is translated to acceleration in 'm/s^2')
-and 'radians/s^2'.
+and 'radians/s^2', assuming the text is properly interpreted.
 
 The original `README.txt` also states,
 
